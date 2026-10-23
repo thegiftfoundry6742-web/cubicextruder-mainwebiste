@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CubicExtruder | 3D Printed Architectural Planters & Industrial Additive Systems</title>
+  <meta name="description" content="Discover precision 3D printed architectural planter pots and industrial additive manufacturing systems. Sliced with care, formed in bio-composites.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/symbol_icon.png">
+
+  <!-- Fonts & Stylesheets -->
+  <link rel="stylesheet" href="styles.css?v=20261014c">
+
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Technical Grid Overlay & Mouse Glow Follower -->
+  <div class="bg-grid-overlay"></div>
+  <div class="mouse-glow-follower"></div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/logo_real.png" alt="CubicExtruder Logo" style="height: 36px; width: auto; object-fit: contain;">
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="products.html">PLANTER POTS</a></li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Interactive Cart Button with Badge -->
+        <a href="checkout.html" class="nav-cart-btn" title="View Cart / Quote Request">
+          <i data-lucide="shopping-bag" style="width: 17px; height: 17px;"></i>
+          <span>Cart</span>
+          <span class="cart-counter-badge" style="display: none;">0</span>
+        </a>
+
+        <a href="#contact" class="btn-3d-pill">
+          <span>Get a Quote</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section (WE ARE [SYMBOL ICON] 3D DRIVEN) -->
+  <section class="hero-section">
+    <!-- Top-Left Pixel Grid Accent (Bottle Green #006A4E) -->
+    <div class="pixel-grid-accent-left">
+      <div class="pixel-box active-green"></div>
+      <div class="pixel-box active-green"></div>
+      <div class="pixel-box"></div>
+      <div class="pixel-box active-green"></div>
+      <div class="pixel-box active-green"></div>
+      <div class="pixel-box"></div>
+      <div class="pixel-box active-green"></div>
+      <div class="pixel-box"></div>
+      <div class="pixel-box"></div>
+    </div>
+
+    <!-- Bottom-Right Pixel Grid Accent -->
+    <div class="pixel-grid-accent-right">
+      <div class="pixel-box active-green"></div>
+      <div class="pixel-box active-green"></div>
+      <div class="pixel-box active-green"></div>
+      <div class="pixel-box active-green"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-title-row">
+        <span class="hero-title-text">WE ARE</span>
+        
+        <!-- Official Standalone Isometric 3D Symbol Badge Card -->
+        <div class="hero-center-badge">
+          <img src="assets/symbol_icon.png" alt="CubicExtruder Symbol" style="width: 65%; height: auto; object-fit: contain;">
+        </div>
+
+        <span class="hero-title-text">3D DRIVEN</span>
+      </div>
+
+      <p class="hero-subtext-centered">
+        Precision architectural 3D printed planter pots and industrial extrusion systems. Sustainable parametric geometry designed for modern living.
+      </p>
+
+      <div class="hero-actions-centered">
+        <a href="products.html" class="btn-primary">
+          <i data-lucide="flower" style="width: 18px; height: 18px;"></i>
+          <span>Explore Products</span>
+        </a>
+        <a href="#planters" class="btn-secondary">
+          <span>Featured Planters</span>
+          <i data-lucide="arrow-down-right" style="width: 16px; height: 16px;"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner Logos Infinite Marquee -->
+  <section class="marquee-section">
+    <div class="marquee-title">// INDUSTRIAL GRADE HARDWARE & ADVANCED POLYMER SYSTEMS</div>
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <div class="partner-logo-item"><i data-lucide="cpu"></i> BAMBU LAB X1E</div>
+        <div class="partner-logo-item"><i data-lucide="zap"></i> FORMLABS SLA3</div>
+        <div class="partner-logo-item"><i data-lucide="shield"></i> MARKFORGED INDUSTRIAL</div>
+        <div class="partner-logo-item"><i data-lucide="leaf"></i> RECYCLED PETG BIO-POLYMER</div>
+        <div class="partner-logo-item"><i data-lucide="flame"></i> EOS METAL DMLS</div>
+        <div class="partner-logo-item"><i data-lucide="globe"></i> STRATASYS F900</div>
+        <div class="partner-logo-item"><i data-lucide="maximize-2"></i> ULTIMAKER S7</div>
+        <div class="partner-logo-item"><i data-lucide="atom"></i> BASF FORWARD AM</div>
+
+        <!-- Duplicate for continuous scroll -->
+        <div class="partner-logo-item"><i data-lucide="cpu"></i> BAMBU LAB X1E</div>
+        <div class="partner-logo-item"><i data-lucide="zap"></i> FORMLABS SLA3</div>
+        <div class="partner-logo-item"><i data-lucide="shield"></i> MARKFORGED INDUSTRIAL</div>
+        <div class="partner-logo-item"><i data-lucide="leaf"></i> RECYCLED PETG BIO-POLYMER</div>
+        <div class="partner-logo-item"><i data-lucide="flame"></i> EOS METAL DMLS</div>
+        <div class="partner-logo-item"><i data-lucide="globe"></i> STRATASYS F900</div>
+        <div class="partner-logo-item"><i data-lucide="maximize-2"></i> ULTIMAKER S7</div>
+        <div class="partner-logo-item"><i data-lucide="atom"></i> BASF FORWARD AM</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRAND NEW: Featured 3D Printed Planter Pots Showcase (Replaces Old Projects Section) -->
+  <section id="planters" class="planters-section">
+    <div class="container">
+      <div class="planters-header-row">
+        <div>
+          <div class="section-tag">
+            <span class="tag-dot"></span>
+            <span>FEATURED COLLECTION</span>
+          </div>
+          <h2 class="section-heading" style="margin-bottom: 0.5rem;">3D Printed Architectural Planters</h2>
+          <p class="section-description" style="margin-bottom: 0;">
+            Parametric vessels engineered with root-aeration geometry, built-in drainage systems, and tactile matte finishes.
+          </p>
+        </div>
+        <div class="planters-header-actions">
+          <!-- Horizontal Scroll Arrow Controls -->
+          <div class="planters-scroll-controls">
+            <button type="button" class="planter-nav-arrow" id="planters-scroll-left" aria-label="Previous Planters" title="Scroll Left">
+              <i data-lucide="chevron-left" style="width: 18px; height: 18px;"></i>
+            </button>
+            <button type="button" class="planter-nav-arrow" id="planters-scroll-right" aria-label="Next Planters" title="Scroll Right">
+              <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
+            </button>
+          </div>
+
+          <a href="products.html" class="btn-secondary">
+            <span>View All Planters</span>
+            <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Small Product Cards in Horizontal Row -->
+      <div class="planters-horizontal-wrap">
+        <div class="planters-horizontal-row" id="homepage-planters-container">
+          <!-- Card 1 -->
+          <div class="planter-card-small">
+            <div class="planter-img-wrap">
+              <a href="product-detail.html?id=planter-01">
+                <img src="assets/planter_1_geo_green.jpg" alt="HexaSculpt Parametric Spiral Planter" loading="lazy">
+              </a>
+              <span class="planter-badge-tag badge-green">Bestseller</span>
+            </div>
+            <div class="planter-card-body">
+              <div class="planter-category">Geometric</div>
+              <h3 class="planter-title">
+                <a href="product-detail.html?id=planter-01" style="color: inherit; text-decoration: none;">HexaSculpt Parametric Spiral Planter</a>
+              </h3>
+              <div class="planter-dimensions-pill">
+                <i data-lucide="ruler" style="width: 12px; height: 12px;"></i>
+                <span>6.5" H • 1.4L</span>
+              </div>
+              <div class="planter-swatches">
+                <span class="color-dot" style="background: #006A4E;" title="Bottle Green"></span>
+                <span class="color-dot" style="background: #D97443;" title="Terracotta"></span>
+                <span class="color-dot" style="background: #22252A;" title="Charcoal"></span>
+                <span class="color-dot" style="background: #F0EAE1;" title="Sandstone White"></span>
+              </div>
+              <div class="planter-card-footer">
+                <div class="planter-price">₹1,499</div>
+                <a href="product-detail.html?id=planter-01" class="planter-view-btn">
+                  <span>View</span>
+                  <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="planter-card-small">
+            <div class="planter-img-wrap">
+              <a href="product-detail.html?id=planter-02">
+                <img src="assets/planter_2_fluted_terracotta.jpg" alt="Aura Fluted Cylindrical Architectural Planter" loading="lazy">
+              </a>
+              <span class="planter-badge-tag">Architect Favorite</span>
+            </div>
+            <div class="planter-card-body">
+              <div class="planter-category">Ribbed & Fluted</div>
+              <h3 class="planter-title">
+                <a href="product-detail.html?id=planter-02" style="color: inherit; text-decoration: none;">Aura Fluted Cylindrical Architectural Planter</a>
+              </h3>
+              <div class="planter-dimensions-pill">
+                <i data-lucide="ruler" style="width: 12px; height: 12px;"></i>
+                <span>8.0" H • 2.6L</span>
+              </div>
+              <div class="planter-swatches">
+                <span class="color-dot" style="background: #D97443;" title="Terracotta"></span>
+                <span class="color-dot" style="background: #006A4E;" title="Bottle Green"></span>
+                <span class="color-dot" style="background: #F0EAE1;" title="Sandstone White"></span>
+                <span class="color-dot" style="background: #22252A;" title="Charcoal"></span>
+              </div>
+              <div class="planter-card-footer">
+                <div class="planter-price">₹1,899</div>
+                <a href="product-detail.html?id=planter-02" class="planter-view-btn">
+                  <span>View</span>
+                  <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="planter-card-small">
+            <div class="planter-img-wrap">
+              <a href="product-detail.html?id=planter-03">
+                <img src="assets/planter_3_sculptural_white.jpg" alt="Mobius Sculptural Organic Vessel" loading="lazy">
+              </a>
+              <span class="planter-badge-tag">Artisan Series</span>
+            </div>
+            <div class="planter-card-body">
+              <div class="planter-category">Architectural</div>
+              <h3 class="planter-title">
+                <a href="product-detail.html?id=planter-03" style="color: inherit; text-decoration: none;">Mobius Sculptural Organic Vessel</a>
+              </h3>
+              <div class="planter-dimensions-pill">
+                <i data-lucide="ruler" style="width: 12px; height: 12px;"></i>
+                <span>7.5" H • 1.8L</span>
+              </div>
+              <div class="planter-swatches">
+                <span class="color-dot" style="background: #F0EAE1;" title="Sandstone White"></span>
+                <span class="color-dot" style="background: #006A4E;" title="Bottle Green"></span>
+                <span class="color-dot" style="background: #22252A;" title="Charcoal"></span>
+                <span class="color-dot" style="background: #8FA89B;" title="Sage Marble"></span>
+              </div>
+              <div class="planter-card-footer">
+                <div class="planter-price">₹2,199</div>
+                <a href="product-detail.html?id=planter-03" class="planter-view-btn">
+                  <span>View</span>
+                  <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="planter-card-small">
+            <div class="planter-img-wrap">
+              <a href="product-detail.html?id=planter-04">
+                <img src="assets/planter_4_selfwatering_charcoal.jpg" alt="Vortex Sub-Irrigation Self-Watering Planter" loading="lazy">
+              </a>
+              <span class="planter-badge-tag badge-green">Smart Care</span>
+            </div>
+            <div class="planter-card-body">
+              <div class="planter-category">Self-Watering</div>
+              <h3 class="planter-title">
+                <a href="product-detail.html?id=planter-04" style="color: inherit; text-decoration: none;">Vortex Sub-Irrigation Self-Watering Planter</a>
+              </h3>
+              <div class="planter-dimensions-pill">
+                <i data-lucide="ruler" style="width: 12px; height: 12px;"></i>
+                <span>8.5" H • 3.0L</span>
+              </div>
+              <div class="planter-swatches">
+                <span class="color-dot" style="background: #22252A;" title="Charcoal"></span>
+                <span class="color-dot" style="background: #006A4E;" title="Bottle Green"></span>
+                <span class="color-dot" style="background: #F0EAE1;" title="Sandstone White"></span>
+                <span class="color-dot" style="background: #D97443;" title="Terracotta"></span>
+              </div>
+              <div class="planter-card-footer">
+                <div class="planter-price">₹2,499</div>
+                <a href="product-detail.html?id=planter-04" class="planter-view-btn">
+                  <span>View</span>
+                  <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us & Metric Results -->
+  <section id="about" class="about-section" style="padding: 7rem 0; background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-tag">
+        <span class="tag-dot"></span>
+        <span>ABOUT US</span>
+      </div>
+      <p class="about-lead" style="font-size: 1.6rem; font-weight: 500; margin-bottom: 2rem; max-width: 800px; color: var(--text-dark-primary);">
+        At our core, we believe great 3D printing is more than rapid prototyping — it’s sustainable physical impact.
+      </p>
+      <h2 class="section-heading">PRECISION MANUFACTURING FOR ARCHITECTURAL HARDWARE & LIVING PRODUCTS</h2>
+
+      <div class="process-grid" style="margin-top: 3rem;">
+        <div class="process-card">
+          <div class="step-num" style="color: var(--text-dark-primary);">99.8%</div>
+          <h4>Extrusion Accuracy</h4>
+          <p>Multi-sensor temperature and layer height dimensional consistency.</p>
+        </div>
+        <div class="process-card">
+          <div class="step-num" style="color: var(--text-dark-primary);">100%</div>
+          <h4>Recycled & Bio-Based</h4>
+          <p>Formulated with plant-derived PLA+ and post-consumer recycled PETG.</p>
+        </div>
+        <div class="process-card">
+          <div class="step-num" style="color: var(--text-dark-primary);">4.9 / 5</div>
+          <h4>Customer Rating</h4>
+          <p>Verified reviews from landscape architects, offices, and design lovers.</p>
+        </div>
+        <div class="process-card">
+          <div class="step-num" style="color: var(--text-dark-primary);">24-48h</div>
+          <h4>Rapid Dispatch</h4>
+          <p>On-demand print farm ready for single vessels and wholesale batches.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Bento Grid -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-tag">
+        <span class="tag-dot"></span>
+        <span>OUR SERVICES & CAPABILITIES</span>
+      </div>
+      <h2 class="section-heading">Architectural Planters & Precision Additive Services</h2>
+      <p class="section-description">
+        From designer consumer planter collections and corporate gifting to rapid engineering prototypes and on-demand production batches.
+      </p>
+
+      <div class="bento-grid">
+        <!-- 1. Planter Pots (Large Card) -->
+        <div class="bento-card bento-card-large">
+          <div>
+            <div class="bento-icon"><i data-lucide="flower-2"></i></div>
+            <h3>3D PRINTED PLANTER POTS & ARCHITECTURAL VESSELS</h3>
+            <p>
+              Parametric algorithmic planters, ribbed cylindrical vessels, and self-watering systems engineered with bio-composite PLA+ and mineral infusion. Featuring concealed drainage reservoirs and optimal root aeration for modern spaces.
+            </p>
+            <div class="bento-tags">
+              <span class="bento-tag-pill">Algorithmic Slicing</span>
+              <span class="bento-tag-pill">Watertight Bio-PLA+</span>
+              <span class="bento-tag-pill">Sub-Irrigation Systems</span>
+              <span class="bento-tag-pill">Indoor Foliage</span>
+            </div>
+          </div>
+          <div>
+            <a href="products.html" class="bento-action-link">
+              <span>Browse Planters Collection</span>
+              <i data-lucide="arrow-right" style="width: 15px; height: 15px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Corporate Gifting (Medium Card) -->
+        <div class="bento-card bento-card-medium">
+          <div>
+            <div class="bento-icon"><i data-lucide="gift"></i></div>
+            <h3>CORPORATE GIFTING & BRANDED MERCHANDISE</h3>
+            <p>
+              Bespoke executive desk planters, personalized company logo debossing, and premium gift sets tailored for client appreciation and employee milestones.
+            </p>
+            <div class="bento-tags">
+              <span class="bento-tag-pill">Custom Logo Insets</span>
+              <span class="bento-tag-pill">Executive Sets</span>
+              <span class="bento-tag-pill">Low MOQs</span>
+            </div>
+          </div>
+          <div>
+            <a href="checkout.html" class="bento-action-link">
+              <span>Request Gifting Quote</span>
+              <i data-lucide="arrow-right" style="width: 15px; height: 15px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Rapid Prototyping (Small Card - Span 6) -->
+        <div class="bento-card bento-card-small">
+          <div>
+            <div class="bento-icon"><i data-lucide="zap"></i></div>
+            <h3>RAPID PROTOTYPING & ENGINEERING ITERATIONS</h3>
+            <p>
+              High-precision 24-hour turnaround SLA resin & industrial FDM printing for functional assemblies, snap-fit components, and design validation.
+            </p>
+            <div class="bento-tags">
+              <span class="bento-tag-pill">24h Fast Turnaround</span>
+              <span class="bento-tag-pill">25µm SLA Resin</span>
+              <span class="bento-tag-pill">Snap-Fit Testing</span>
+            </div>
+          </div>
+          <div>
+            <a href="#contact" class="bento-action-link">
+              <span>Submit 3D CAD Files</span>
+              <i data-lucide="arrow-right" style="width: 15px; height: 15px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4. On-Demand Batch Manufacturing (Small Card - Span 6) -->
+        <div class="bento-card bento-card-small">
+          <div>
+            <div class="bento-icon"><i data-lucide="layers"></i></div>
+            <h3>ON-DEMAND BATCH MANUFACTURING</h3>
+            <p>
+              Scalable additive production from 10 to 10,000+ units. Zero tooling costs, zero injection mold wait times, consistent material density, and reliable delivery.
+            </p>
+            <div class="bento-tags">
+              <span class="bento-tag-pill">Zero Tooling Cost</span>
+              <span class="bento-tag-pill">Low-to-Mid Batches</span>
+              <span class="bento-tag-pill">Production Grade</span>
+            </div>
+          </div>
+          <div>
+            <a href="checkout.html" class="bento-action-link">
+              <span>Request Batch Pricing</span>
+              <i data-lucide="arrow-right" style="width: 15px; height: 15px;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Workflow Section -->
+  <section id="process" class="process-section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-tag">
+        <span class="tag-dot"></span>
+        <span>PRODUCTION WORKFLOW</span>
+      </div>
+      <h2 class="section-heading">How We Bring Designs to Life</h2>
+      <p class="section-description">
+        Every vessel is sliced with parametric precision for root health, structural balance, and long-lasting durability.
+      </p>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="step-num">01</div>
+          <h4>Parametric 3D CAD</h4>
+          <p>Algorithmic modeling of ribbed wall thickness, light diffusion, and concealed drainage reservoirs.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="step-num">02</div>
+          <h4>Bio-Filament Slicing</h4>
+          <p>Precision multi-axis G-code optimization ensuring 100% watertight walls and zero infill collapse.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="step-num">03</div>
+          <h4>Continuous Extrusion</h4>
+          <p>Our dedicated print farm fabricates each pot with real-time temperature and optical flow sensors.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="step-num">04</div>
+          <h4>Eco Packaging & Ship</h4>
+          <p>Hand-finished, quality inspected, and packaged in 100% biodegradable honeycomb cardboard.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & Wholesale Section -->
+  <section id="pricing" class="estimator-section">
+    <div class="container">
+      <div class="section-tag">
+        <span class="tag-dot"></span>
+        <span>ORDERS & PRICING</span>
+      </div>
+      <h2 class="section-heading">Single Vessels or Studio Batches</h2>
+      <p class="section-description">
+        Individual retail orders or volume commercial quotes for interior designers, offices, and plant boutiques.
+      </p>
+
+      <div class="showcase-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+        <div class="estimator-summary-card" style="background: var(--bg-surface); color: var(--text-dark-primary); border-color: var(--border-light);">
+          <div class="summary-title" style="border-color: var(--border-light);">
+            <h3>Retail & Home Decor</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 400;">For plant enthusiasts, living rooms, and private home gardens.</p>
+          </div>
+          <div style="font-family: var(--font-display); font-size: 2.8rem; font-weight: 800; margin: 1.5rem 0; color: var(--accent-green);">
+            ₹1,499 – ₹2,499 <span style="font-size: 1rem; color: var(--text-muted); font-weight: 400;">/ planter</span>
+          </div>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; color: var(--text-dark-secondary); margin-bottom: 2rem;">
+            <li>✓ Made to order in 24–48 hours</li>
+            <li>✓ 4 designer colors + matching drip trays</li>
+            <li>✓ 100% bio-composite recyclable material</li>
+            <li>✓ Integrated drainage & aeration</li>
+            <li>✓ 30-day money-back guarantee</li>
+          </ul>
+          <a href="products.html" class="btn-primary" style="width:100%; justify-content:center;">
+            <span>Browse Planter Catalog</span>
+          </a>
+        </div>
+
+        <div class="estimator-summary-card">
+          <div class="summary-title">
+            <h3 style="color: var(--text-white);">Wholesale & Commercial</h3>
+            <p style="font-size: 0.85rem; color: var(--text-white-muted); font-weight: 400;">For interior designers, real estate staging, corporate offices, and retailers.</p>
+          </div>
+          <div style="font-family: var(--font-display); font-size: 3rem; font-weight: 800; margin: 1.5rem 0; color: #34d399;">
+            Tiered Quotes <span style="font-size: 1rem; color: var(--text-white-muted); font-weight: 400;">(10+ units)</span>
+          </div>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; color: var(--text-white-muted); margin-bottom: 2rem;">
+            <li>✓ Volume discounts up to 40% off retail</li>
+            <li>✓ Custom Pantone color matching (#006A4E bottle green, etc.)</li>
+            <li>✓ Custom laser debossed company logo / branding</li>
+            <li>✓ Dedicated account manager & free delivery samples</li>
+            <li>✓ Net 30 invoicing available</li>
+          </ul>
+          <a href="checkout.html" class="btn-primary" style="width:100%; justify-content:center;">
+            <span>Request Commercial Quote</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <div class="section-tag">
+        <span class="tag-dot"></span>
+        <span>FAQS</span>
+      </div>
+      <h2 class="section-heading">Frequently Asked Questions</h2>
+      <p class="section-description">
+        Everything you need to know about our 3D printed planters, drainage, and custom orders.
+      </p>
+
+      <div class="faq-accordion">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>Are 3D printed planters completely waterproof?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Our planters are printed with 4 solid perimeters and continuous extrusion flow, making them 100% leak-proof. Each pot includes drainage holes and an internal or matching snap-fit drip saucer to protect your furniture.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What materials do you use for the planter pots?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            <p>We use premium Bio-PLA+ derived from fermented plant starch (corn/sugarcane) infused with fine mineral powder, as well as recycled UV-stabilized PETG for outdoor architectural vessels. All materials are non-toxic, odorless, and biodegradable under industrial composting.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How does the self-watering system work?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            <p>Our self-watering models (like the Vortex series) feature a dual-reservoir design. The bottom chamber holds up to 14 days of water, and capillary wicking channels deliver moisture directly to the soil as needed, preventing root rot while keeping plants perfectly hydrated.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I request custom sizes or corporate logo debossing?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! Simply add your requested dimensions and details in our Quote Request page, or contact our engineering team directly. We frequently customize dimensions up to 24 inches tall and add custom studio logos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Marquee Banner (Bottle Green #006A4E) -->
+  <section id="contact" class="contact-marquee-banner">
+    <div class="container">
+      <h2 class="contact-marquee-title">LET'S START YOUR 3D PRINTING PROJECT</h2>
+    </div>
+    <div class="contact-lime-step-bg">
+      <div class="contact-tag-badge">PRECISION EXTRUSION</div>
+      <div class="contact-center-icon-badge">
+        <img src="assets/symbol_icon.png" alt="CubicExtruder Symbol" style="width: 55%; height: auto; object-fit: contain;">
+      </div>
+      <div class="contact-tag-badge">GLOBAL SHIPMENTS</div>
+    </div>
+  </section>
+
+  <!-- Dark Contact Section -->
+  <section class="contact-dark-section">
+    <div class="container">
+      <div class="contact-grid-2col">
+        <div class="contact-left-info">
+          <div class="contact-badge-dark">GET IN TOUCH</div>
+          <div>
+            <a href="mailto:hello@cubicextruder.com" class="contact-email-big">hello@cubicextruder.com</a>
+            <br><br>
+            <a href="tel:+11234567890" class="contact-phone-big">(+1) 123 456-7890</a>
+          </div>
+          <div>
+            <div class="offices-header">STUDIO & PRINT FARMS</div>
+            <div class="offices-grid">
+              <div>
+                4200 Saint Laurent Blvd, Suite 305<br>
+                Montreal, QC H2W 2R2<br>
+                Canada
+              </div>
+              <div>
+                1920 McKinney Avenue, 7th Floor<br>
+                Dallas, TX 75201<br>
+                United States
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form-dark" onsubmit="handleContactInquiry(event)">
+          <div class="form-field-group">
+            <label class="form-field-label">/YOUR NAME</label>
+            <input type="text" id="contact-name" class="form-field-input" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-field-group">
+            <label class="form-field-label">/YOUR E-MAIL</label>
+            <input type="email" id="contact-email" class="form-field-input" placeholder="Enter your business e-mail" required>
+          </div>
+
+          <div class="form-field-group">
+            <label class="form-field-label">/TELL US ABOUT YOUR PROJECT OR PLANTER INQUIRY</label>
+            <textarea id="contact-message" class="form-field-input" rows="3" placeholder="Tell us quantity, desired colors, or custom dimensions" required></textarea>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; flex-wrap: wrap; gap: 1rem;">
+            <button type="button" class="attachment-btn" onclick="alert('For large CAD files (.step, .stl, .3mf), you can also submit direct via quotes checkout or email CAD to info@cubicextruder.com');">
+              <i data-lucide="paperclip" style="width:16px; height:16px;"></i>
+              <span>Attach CAD or Specs</span>
+            </button>
+            <button type="submit" id="contact-submit-btn" class="btn-primary" style="padding: 0.85rem 2rem;">
+              <span>Submit Inquiry</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3-Tier Footer with Real CubicExtruder Logo Image & Polished Hovers -->
+  <footer class="site-footer-agenio">
+    <div class="footer-top-nav-bar">
+      <div class="container footer-nav-row">
+        <a href="#about" class="footer-nav-item">About us</a>
+        <div class="footer-nav-separator"></div>
+        <a href="products.html" class="footer-nav-item">Planter Pots</a>
+        <div class="footer-nav-separator"></div>
+        <a href="#services" class="footer-nav-item">Services</a>
+        <div class="footer-nav-separator"></div>
+        <a href="#pricing" class="footer-nav-item">Pricing Plan</a>
+      </div>
+    </div>
+
+    <div class="footer-center-brand-box">
+      <div class="footer-pixel-step-left">
+        <div></div><div></div><div></div>
+        <div></div><div></div><div></div>
+        <div></div><div></div><div></div>
+      </div>
+
+      <div class="footer-giant-logo">
+        <img src="assets/logo_real.png" alt="CubicExtruder Logo" style="height: clamp(3.5rem, 8vw, 6.5rem); width: auto; max-width: 85vw; object-fit: contain;">
+      </div>
+
+      <div class="footer-pixel-step-right">
+        <div></div><div></div><div></div>
+        <div></div><div></div><div></div>
+        <div></div><div></div><div></div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-row">
+        <div class="footer-social-links">
+          <a href="#">Instagram</a>
+          <a href="#">Linkedin</a>
+          <a href="#">Dribbble</a>
+          <a href="#">Behance</a>
+        </div>
+        <div>© 2026 CubicExtruder. Precision 3D Printed Architectural Living.</div>
+        <div>
+          <a href="#" class="back-to-top-btn" style="text-decoration: none; color: var(--text-dark-secondary); font-weight: 600;">Back to Top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Catalog Store & Application Scripts -->
+  <script src="catalog.js?v=20261014c"></script>
+  <script src="app.js?v=20261014c"></script>
+  <script>
+    lucide.createIcons();
+    // Sync cart counter badge on load
+    if (typeof CartStore !== 'undefined') {
+      CartStore.updateHeaderBadge();
+    }
+
+    async function handleContactInquiry(e) {
+      e.preventDefault();
+      const name = document.getElementById('contact-name').value.trim();
+      const email = document.getElementById('contact-email').value.trim();
+      const message = document.getElementById('contact-message').value.trim();
+      const submitBtn = document.getElementById('contact-submit-btn');
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span>Sending to Engineering...</span>';
+      }
+
+      if (typeof CUBIC_SUPABASE !== 'undefined') {
+        await CUBIC_SUPABASE.pushInquiry({
+          name: name,
+          email: email,
+          message: message,
+          service: 'Custom Planter & Prototyping Inquiry'
+        });
+      }
+
+      if (submitBtn) {
+        submitBtn.innerHTML = '<span>✓ Inquiry Dispatched!</span>';
+        submitBtn.style.background = '#006A4E';
+      }
+
+      alert('Thank you, ' + name + '! Your inquiry has been dispatched to our engineering team. We will review your requirements and respond to ' + email + ' shortly.');
+      e.target.reset();
+
+      setTimeout(() => {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = '<span>Submit Inquiry</span>';
+          submitBtn.style.background = '';
+        }
+      }, 4000);
+    }
+  </script>
+</body>
+</html>

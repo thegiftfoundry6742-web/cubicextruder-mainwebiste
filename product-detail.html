@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | CubicExtruder Architectural 3D Print</title>
+  <meta name="description" content="View specifications, dimensions, color options, and pricing for CubicExtruder 3D printed architectural planter pots.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/symbol_icon.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css?v=20261014c">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Technical Grid Overlay -->
+  <div class="bg-grid-overlay"></div>
+  <div class="mouse-glow-follower"></div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/logo_real.png" alt="CubicExtruder Logo" style="height: 36px; width: auto; object-fit: contain;">
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="products.html" class="active">PLANTER POTS</a></li>
+        <li><a href="index.html#about">ABOUT US</a></li>
+        <li><a href="index.html#services">SERVICES</a></li>
+        <li><a href="index.html#pricing">PRICING</a></li>
+        <li><a href="index.html#contact">CONTACT</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Cart Button with Counter Badge -->
+        <a href="checkout.html" class="nav-cart-btn" title="View Cart / Quote Request">
+          <i data-lucide="shopping-bag" style="width: 17px; height: 17px;"></i>
+          <span>Cart</span>
+          <span class="cart-counter-badge" style="display: none;">0</span>
+        </a>
+
+        <a href="checkout.html" class="btn-3d-pill">
+          <span>Get a Quote</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Product Details Studio Section -->
+  <main class="page-top-spacer" style="padding-bottom: 7rem;">
+    <div class="container">
+      <!-- Breadcrumbs Navigation -->
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <a href="products.html">Planters</a>
+        <span>/</span>
+        <span id="breadcrumb-product-name" style="color: var(--text-dark-primary); font-weight: 600;">Planter Details</span>
+      </div>
+
+      <!-- Main Product Studio Grid (Gallery + Details Pane) -->
+      <div class="product-studio-grid">
+        <!-- Left: Image Gallery with Multi-Thumbnails -->
+        <div class="gallery-container">
+          <div class="gallery-main-frame">
+            <img id="main-product-image" src="assets/planter_1_geo_green.jpg" alt="Planter Primary View">
+            <span id="product-badge-float" class="planter-badge-tag badge-green">Bestseller</span>
+          </div>
+
+          <div class="gallery-thumbnails-row" id="gallery-thumbs-container">
+            <!-- Populated dynamically via JS -->
+          </div>
+        </div>
+
+        <!-- Right: Detailed Product Options & Specs -->
+        <div class="product-details-pane">
+          <div>
+            <div class="detail-badge-row">
+              <span id="product-category-badge" class="badge-pill-green">Geometric</span>
+              <span style="font-size: 0.85rem; color: #16a34a; font-weight: 600; display: inline-flex; align-items: center; gap: 0.35rem;">
+                <i data-lucide="check-circle" style="width: 15px; height: 15px;"></i> In Stock • Made to Order
+              </span>
+            </div>
+
+            <h1 id="product-title" class="product-title-large" style="margin-top: 0.75rem;">
+              HexaSculpt Parametric Spiral Planter
+            </h1>
+
+            <div class="rating-row" style="margin-top: 0.5rem;">
+              <div class="stars">★★★★★</div>
+              <span id="rating-text" style="font-weight: 600; color: var(--text-dark-primary);">4.9</span>
+              <span>•</span>
+              <span id="reviews-count-text">54 reviews</span>
+              <span>•</span>
+              <span id="lead-time-text" style="color: var(--accent-green); font-weight: 600;">Ships in 24-48 hours</span>
+            </div>
+          </div>
+
+          <!-- Price Box -->
+          <div class="price-box-large">
+            <div>
+              <span id="product-price" class="price-value-big">₹1,499</span>
+            </div>
+            <div class="price-subtext">
+              Inclusive of matching drip saucer.<br>
+              <strong>Wholesale Tier:</strong> 10+ units eligible for commercial volume discounts.
+            </div>
+          </div>
+
+          <!-- Product Short Summary -->
+          <p id="product-summary" style="font-size: 1.05rem; color: var(--text-dark-secondary); line-height: 1.6;">
+            Parametric spiral helical ribs that refract light and highlight 0.2mm precision layer lines. Engineered for succulents and tabletop foliage.
+          </p>
+
+          <!-- Dimensions Specs Table -->
+          <div>
+            <div class="option-label">
+              <span>PHYSICAL DIMENSIONS & CAPACITY</span>
+              <span style="font-weight: 400; color: var(--text-muted); font-size: 0.8rem;">Precision ±0.2mm</span>
+            </div>
+            <div class="spec-dimensions-table">
+              <div class="spec-row">
+                <span class="spec-label">Height:</span>
+                <span class="spec-val" id="spec-height">6.5 inches (16.5 cm)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Outer Diameter:</span>
+                <span class="spec-val" id="spec-outer-diam">6.2 inches (15.8 cm)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Inner Root Cavity:</span>
+                <span class="spec-val" id="spec-inner-diam">5.4 inches (13.7 cm)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Soil Capacity:</span>
+                <span class="spec-val" id="spec-capacity">1.4 Liters (48 fl oz)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Dry Weight:</span>
+                <span class="spec-val" id="spec-weight">280 grams</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Drainage System:</span>
+                <span class="spec-val" id="spec-drainage">Central drainage hole + matching drip tray</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Color Selector Option -->
+          <div>
+            <div class="option-label">
+              <span>SELECT COLOR FINISH:</span>
+              <span id="selected-color-label" style="color: var(--accent-green); font-weight: 700;">Bottle Green (#006A4E)</span>
+            </div>
+            <div class="swatch-group" id="color-swatches-container">
+              <!-- Swatches generated dynamically via JS -->
+            </div>
+          </div>
+
+          <!-- Quantity Stepper & Buttons -->
+          <div>
+            <div class="option-label">
+              <span>SELECT QUANTITY:</span>
+            </div>
+            <div class="purchase-controls-row">
+              <div class="qty-stepper">
+                <button type="button" class="qty-btn" id="qty-decrement">-</button>
+                <input type="number" id="qty-input" class="qty-input" value="1" min="1" max="999">
+                <button type="button" class="qty-btn" id="qty-increment">+</button>
+              </div>
+
+              <!-- Add to Cart Button -->
+              <button type="button" class="btn-primary" id="add-to-cart-btn" style="flex-grow: 1; justify-content: center;">
+                <i data-lucide="shopping-bag" style="width: 18px; height: 18px;"></i>
+                <span>Add to Cart</span>
+              </button>
+
+              <!-- Buy Now / Direct Quote Button -->
+              <button type="button" class="btn-secondary" id="buy-now-btn" style="flex-grow: 1; justify-content: center;">
+                <i data-lucide="send" style="width: 18px; height: 18px;"></i>
+                <span>Buy Now / Get Quote</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Added Notification Alert -->
+          <div id="cart-alert-success" style="display: none; background: #e6f4ef; border: 1px solid var(--accent-green-border); color: var(--accent-green); padding: 1rem 1.25rem; border-radius: 12px; font-size: 0.95rem; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600;">
+              <i data-lucide="check-circle" style="width: 18px; height: 18px;"></i>
+              <span>Item added to your quote cart!</span>
+            </div>
+            <a href="checkout.html" class="btn-primary" style="padding: 0.45rem 1.1rem; font-size: 0.85rem; text-decoration: none;">Proceed to Checkout →</a>
+          </div>
+
+          <!-- Feature Bullets -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; padding-top: 1.5rem; border-top: 1px solid var(--border-light); font-size: 0.85rem; color: var(--text-dark-secondary);">
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <i data-lucide="leaf" style="width: 16px; height: 16px; color: var(--accent-green);"></i>
+              <span>Bio-PLA+ & Mineral Composite</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <i data-lucide="droplet" style="width: 16px; height: 16px; color: var(--accent-green);"></i>
+              <span>Watertight 4-Wall Perimeters</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <i data-lucide="shield" style="width: 16px; height: 16px; color: var(--accent-green);"></i>
+              <span>Drop-Resistant & Shatterproof</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <i data-lucide="truck" style="width: 16px; height: 16px; color: var(--accent-green);"></i>
+              <span>Worldwide Express Courier</span>
+            </div>
+          </div>
+
+          <!-- Long Description & Tabs -->
+          <div style="margin-top: 1rem; border-top: 1px solid var(--border-light); padding-top: 1.5rem;">
+            <h3 style="font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem;">
+              Design & Architectural Craftsmanship
+            </h3>
+            <div id="product-long-description" style="color: var(--text-dark-secondary); font-size: 0.95rem; line-height: 1.7; white-space: pre-line;">
+              <!-- Filled via JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Related Planters Carousel / Grid -->
+      <div style="margin-top: 6rem; border-top: 1px solid var(--border-light); padding-top: 4rem;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2.5rem;">
+          <div>
+            <div class="section-tag">
+              <span class="tag-dot"></span>
+              <span>COMPLETE YOUR SPACE</span>
+            </div>
+            <h2 class="section-heading" style="font-size: 2rem; margin-bottom: 0;">You May Also Like</h2>
+          </div>
+          <a href="products.html" class="btn-secondary" style="font-size: 0.85rem;">View All Planters →</a>
+        </div>
+
+        <div class="planters-grid" id="related-planters-container">
+          <!-- Populated via JS -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 3-Tier Footer -->
+  <footer class="site-footer-agenio">
+    <div class="footer-top-nav-bar">
+      <div class="container footer-nav-row">
+        <a href="index.html#about" class="footer-nav-item">About us</a>
+        <div class="footer-nav-separator"></div>
+        <a href="products.html" class="footer-nav-item" style="color: var(--accent-green);">Planter Pots</a>
+        <div class="footer-nav-separator"></div>
+        <a href="index.html#services" class="footer-nav-item">Services</a>
+        <div class="footer-nav-separator"></div>
+        <a href="index.html#pricing" class="footer-nav-item">Pricing Plan</a>
+      </div>
+    </div>
+
+    <div class="footer-center-brand-box">
+      <div class="footer-pixel-step-left">
+        <div></div><div></div><div></div>
+        <div></div><div></div><div></div>
+        <div></div><div></div><div></div>
+      </div>
+
+      <div class="footer-giant-logo">
+        <img src="assets/logo_real.png" alt="CubicExtruder Logo" style="height: clamp(3.5rem, 8vw, 6.5rem); width: auto; max-width: 85vw; object-fit: contain;">
+      </div>
+
+      <div class="footer-pixel-step-right">
+        <div></div><div></div><div></div>
+        <div></div><div></div><div></div>
+        <div></div><div></div><div></div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-row">
+        <div class="footer-social-links">
+          <a href="#">Instagram</a>
+          <a href="#">Linkedin</a>
+          <a href="#">Dribbble</a>
+          <a href="#">Behance</a>
+        </div>
+        <div>© 2026 CubicExtruder. Precision 3D Printed Architectural Living.</div>
+        <div>
+          <a href="#" class="back-to-top-btn" style="text-decoration: none; color: var(--text-dark-secondary); font-weight: 600;">Back to Top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Catalog Store & Product Detail Logic -->
+  <script src="catalog.js?v=20261014c"></script>
+  <script>
+    // Get product ID from URL query (?id=...)
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id') || 'planter-01';
+    let currentProduct = CatalogStore.getProductById(productId);
+    let selectedColor = currentProduct.colors && currentProduct.colors[0] ? currentProduct.colors[0].name : 'Bottle Green';
+    let currentQuantity = 1;
+
+    function initProductDetails() {
+      if (!currentProduct) return;
+
+      document.title = `${currentProduct.name} | CubicExtruder 3D Planters`;
+      document.getElementById('breadcrumb-product-name').textContent = currentProduct.name;
+      document.getElementById('product-title').textContent = currentProduct.name;
+      document.getElementById('product-category-badge').textContent = currentProduct.category || 'Planter';
+      document.getElementById('product-price').textContent = `₹${currentProduct.price.toLocaleString('en-IN')}`;
+      document.getElementById('product-summary').textContent = currentProduct.summary || '';
+      document.getElementById('product-long-description').textContent = currentProduct.description || currentProduct.summary || '';
+      document.getElementById('rating-text').textContent = currentProduct.rating || '4.9';
+      document.getElementById('reviews-count-text').textContent = `${currentProduct.reviewsCount || 40} reviews`;
+      document.getElementById('lead-time-text').textContent = currentProduct.leadTime || 'Ships in 24-48 hours';
+
+      // Badge
+      const badgeElem = document.getElementById('product-badge-float');
+      if (currentProduct.badge) {
+        badgeElem.textContent = currentProduct.badge;
+        badgeElem.style.display = 'inline-block';
+      } else {
+        badgeElem.style.display = 'none';
+      }
+
+      // Dimensions Table
+      if (currentProduct.dimensions) {
+        document.getElementById('spec-height').textContent = currentProduct.dimensions.height || '7 inches';
+        document.getElementById('spec-outer-diam').textContent = currentProduct.dimensions.outerDiameter || '6.5 inches';
+        document.getElementById('spec-inner-diam').textContent = currentProduct.dimensions.innerDiameter || '5.5 inches';
+        document.getElementById('spec-capacity').textContent = currentProduct.dimensions.capacity || '1.8L';
+        document.getElementById('spec-weight').textContent = currentProduct.dimensions.weight || '320g';
+        document.getElementById('spec-drainage').textContent = currentProduct.dimensions.drainageHole || 'Central drainage hole + tray';
+      }
+
+      // Images Gallery
+      const mainImg = document.getElementById('main-product-image');
+      const galleryImgs = currentProduct.images && currentProduct.images.length > 0 
+        ? currentProduct.images 
+        : [currentProduct.primaryImage || 'assets/planter_1_geo_green.jpg'];
+
+      mainImg.src = galleryImgs[0];
+
+      const thumbsContainer = document.getElementById('gallery-thumbs-container');
+      thumbsContainer.innerHTML = galleryImgs.map((src, idx) => `
+        <div class="thumbnail-box ${idx === 0 ? 'active' : ''}" onclick="switchGalleryImage('${src}', this)">
+          <img src="${src}" alt="Thumbnail ${idx + 1}">
+        </div>
+      `).join('');
+
+      // Color Swatches
+      const swatchesContainer = document.getElementById('color-swatches-container');
+      const colors = currentProduct.colors || [
+        { name: 'Bottle Green', hex: '#006A4E' },
+        { name: 'Terracotta Matte', hex: '#D97443' },
+        { name: 'Obsidian Charcoal', hex: '#22252A' },
+        { name: 'Sandstone White', hex: '#F0EAE1' }
+      ];
+
+      selectedColor = colors[0].name;
+      document.getElementById('selected-color-label').textContent = `${selectedColor} (${colors[0].hex})`;
+
+      swatchesContainer.innerHTML = colors.map((c, idx) => `
+        <button type="button" class="swatch-btn ${idx === 0 ? 'active' : ''}" 
+          style="background-color: ${c.hex};" 
+          title="${c.name}" 
+          onclick="selectColor('${c.name}', '${c.hex}', this)">
+        </button>
+      `).join('');
+
+      // Related Planters
+      renderRelatedPlanters();
+      lucide.createIcons();
+    }
+
+    function switchGalleryImage(src, thumbElem) {
+      document.getElementById('main-product-image').src = src;
+      document.querySelectorAll('.thumbnail-box').forEach(b => b.classList.remove('active'));
+      thumbElem.classList.add('active');
+    }
+
+    function selectColor(colorName, hex, btnElem) {
+      selectedColor = colorName;
+      document.getElementById('selected-color-label').textContent = `${colorName} (${hex})`;
+      document.querySelectorAll('.swatch-btn').forEach(b => b.classList.remove('active'));
+      btnElem.classList.add('active');
+    }
+
+    // Quantity Stepper Controls
+    const qtyInput = document.getElementById('qty-input');
+    document.getElementById('qty-decrement').addEventListener('click', () => {
+      let val = parseInt(qtyInput.value, 10) || 1;
+      if (val > 1) {
+        val--;
+        qtyInput.value = val;
+        currentQuantity = val;
+      }
+    });
+
+    document.getElementById('qty-increment').addEventListener('click', () => {
+      let val = parseInt(qtyInput.value, 10) || 1;
+      val++;
+      qtyInput.value = val;
+      currentQuantity = val;
+    });
+
+    qtyInput.addEventListener('change', (e) => {
+      let val = parseInt(e.target.value, 10);
+      if (isNaN(val) || val < 1) val = 1;
+      qtyInput.value = val;
+      currentQuantity = val;
+    });
+
+    // Add to Cart Action
+    document.getElementById('add-to-cart-btn').addEventListener('click', () => {
+      CartStore.addToCart(currentProduct, selectedColor, currentQuantity);
+      
+      const alertBox = document.getElementById('cart-alert-success');
+      alertBox.style.display = 'flex';
+      setTimeout(() => {
+        alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 100);
+
+      // Pulse the nav cart button
+      const navCart = document.querySelector('.nav-cart-btn');
+      navCart.style.transform = 'scale(1.1)';
+      setTimeout(() => navCart.style.transform = 'none', 300);
+    });
+
+    // Buy Now / Direct Quote Request
+    document.getElementById('buy-now-btn').addEventListener('click', () => {
+      CartStore.addToCart(currentProduct, selectedColor, currentQuantity);
+      window.location.href = `checkout.html?direct=true`;
+    });
+
+    // Render Related Products
+    function renderRelatedPlanters() {
+      const all = CatalogStore.getProducts();
+      const related = all.filter(p => p.id !== currentProduct.id).slice(0, 4);
+      const container = document.getElementById('related-planters-container');
+
+      container.innerHTML = related.map(p => `
+        <div class="planter-card">
+          <div class="planter-img-wrap">
+            <a href="product-detail.html?id=${p.id}">
+              <img src="${p.primaryImage || (p.images && p.images[0]) || 'assets/planter_1_geo_green.jpg'}" alt="${p.name}">
+            </a>
+            ${p.badge ? `<span class="planter-badge-tag">${p.badge}</span>` : ''}
+          </div>
+          <div class="planter-card-body">
+            <div class="planter-category">${p.category}</div>
+            <h3 class="planter-title">
+              <a href="product-detail.html?id=${p.id}" style="color: inherit; text-decoration: none;">
+                ${p.name}
+              </a>
+            </h3>
+            <div class="planter-card-footer">
+              <div class="planter-price">₹${p.price.toLocaleString('en-IN')}</div>
+              <a href="product-detail.html?id=${p.id}" class="planter-view-btn">
+                <span>View Details</span>
+                <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initProductDetails();
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
